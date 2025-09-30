@@ -21,8 +21,12 @@ public class HighScoreWins {
         if (homeScore<visitorScore) {
             winner = visitorTeam;
 
-        }else if (homeScore>visitorScore)
+        }else if (homeScore>visitorScore) {
             winner = homeTeam;
+        }else {
+            winner= "Tie";
+        }
+        System.out.println("Winner:" + winner);
 
 
 
